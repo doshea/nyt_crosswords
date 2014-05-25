@@ -2,12 +2,10 @@
 
 Every New York Times crossword since Jan 1st, 1977, available in JSON format.
 
-Established as a crude open-source API, with data for a certain date's crossword being available at
+Established as a crude open-source API, with data for a given date's crossword being available at
 ```
 https://github.com/doshea/nyt_puzzle_history/blob/master/{year}/{month}/{day}.json
 ```
-
-
 
 ====
 
