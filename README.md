@@ -9,6 +9,7 @@ There are some known gaps in puzzle coverage. Data is not available for these pu
 
 + **pre-1977**
 + **1978**
+  
   Aug 10 - Nov 5
 
 ====
