@@ -7,8 +7,8 @@ Every New York Times crossword since Jan 1st, 1977, available in JSON format.
 ## Gaps
 There are some known gaps in puzzle coverage. Data is not available for these puzzles.
 
-+**pre-1977**
-+**1978**
++ **pre-1977**
++ **1978**
 
 ...Aug 10 - Nov 5
 
