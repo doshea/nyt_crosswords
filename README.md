@@ -4,13 +4,8 @@ Every New York Times crossword since Jan 1st, 1977, available in JSON format.
 
 ---
 
-## Gaps
-There are some known gaps in puzzle coverage. Data is not available for these puzzles.
-
-+ **pre-1977**
-+ **1978**
-  
-   Aug 10 - Nov 5
+### Mind the Gap!
+There is a known gap in coverage between **Aug 10 - Nov 5, 1978**
 
 ====
 This README written in [Github Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
