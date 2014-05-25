@@ -1,8 +1,8 @@
-# New York Times Crossword Puzzles
+# New York Times Crosswords
 
 Every New York Times crossword since Jan 1st, 1977, available in JSON format.
 
-Established as a crude open-source API, with data for a given date's crossword being available at
+This repository was established as an open-source archive and a crude API, with data for a given date's crossword being available from its corresponding RAW JSON file at:
 ```
 https://github.com/doshea/nyt_puzzle_history/blob/master/{year}/{month}/{day}.json
 ```
