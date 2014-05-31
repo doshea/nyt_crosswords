@@ -4,7 +4,7 @@ Every New York Times crossword since Jan 1st, 1977, available in JSON format.
 
 This repository was established as an open-source archive and a crude API, with data for a given date's crossword being available from its corresponding RAW JSON file at:
 ```
-https://raw.githubusercontent.com/doshea/nyt_puzzle_history/master/#{year}/#{month}/#{day}.json
+https://raw.githubusercontent.com/doshea/nyt_crosswords/master/#{year}/#{month}/#{day}.json
 ```
 
 ====
