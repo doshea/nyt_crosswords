@@ -10,7 +10,9 @@ https://raw.githubusercontent.com/doshea/nyt_crosswords/master/#{year}/#{month}/
 ====
 
 ### Mind the Gap!
-There is a known gap in coverage between **Aug 10 - Nov 5, 1978**
+There are known gaps in coverage:
+- **1978: Aug 10 - Nov 5**
+- **2015-16: Aug 30 - May 1**
 
 ---
 This README written in [Github Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
