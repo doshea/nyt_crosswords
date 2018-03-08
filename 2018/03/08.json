@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compilation Error</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Compilation Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately.
+            <br><br>
+
+            <b> Compiler Error Message: </b>CS0103: The name &#39;sShortMonthName&#39; does not exist in the current context<br><br>
+<b>Source Error:</b><br><br>
+            <table width=100% bgcolor="#ffffcc">
+               <tr><td>
+                              </td></tr>
+               <tr>
+                  <td>
+                      <code><pre>
+
+Line 197:            {
+Line 198:                string sDirPath = Server.MapPath(&quot;~/data/&quot;);
+<font color=red>Line 199:                string sFilePath = sDirPath + $&quot;{date.Year}/{date.Month:D2}/{sShortMonthName[date.Month - 1]}{date.Day:D2}{date.Year % 100:D2}.puz&quot;;
+</font>Line 200:                
+Line 201:                try</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Source File:</b> C:\home\site\wwwroot\JSON\Data.aspx.cs
+            &nbsp;&nbsp; <b>Line:</b>  199
+            <br><br>
+<br><div class="expandable" onclick="OnToggleTOCLevel1('compilerOutputDiv')">Show Detailed Compiler Output:</div>
+<div id="compilerOutputDiv" style="display: none;">
+            <br><table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+C:\Windows\system32&gt;C:\home\site\wwwroot\bin\roslyn\csc.exe /t:library /utf8output /nostdlib+ /R:&quot;C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\a8480fa6\cb2613b0_65aad301\Microsoft.Owin.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Activation\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Activation.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\bec061ed\70300763_6131d301\WebGrease.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\cd063d49\ba624253_6131d301\System.Net.Sockets.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Reflection\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Reflection.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\af73cea5\6216e94b_6131d301\System.Diagnostics.DiagnosticSource.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IO\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.IO.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Web.Infrastructure\v4.0_1.0.0.0__31bf3856ad364e35\Microsoft.Web.Infrastructure.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\dd2d1603\574b7250_6131d301\System.IO.FileSystem.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\63fc56fc\f16615bc_3d80d301\NLog.Web.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Extensions\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Extensions.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\48d7b718\397c2cb1_65aad301\Microsoft.Owin.Host.SystemWeb.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\af30a428\86b83d58_e3b0d301\NLog.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IO.Compression\v4.0_4.0.0.0__b77a5c561934e089\System.IO.Compression.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\c3092609\008f0832_dcc1cd01\Owin.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\d9e0bb45\fe440aaf_65aad301\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.dll&quot; /R:&quot;C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Extensions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Extensions.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Web\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\0b2f7ce9\5aa9ce85_0077d301\System.Security.Cryptography.X509Certificates.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Text.RegularExpressions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Text.RegularExpressions.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Data.Linq.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\EnvSettings\v4.0_1.0.0.0__31bf3856ad364e35\EnvSettings.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\2cfea149\fb00fd60_6131d301\UAParser.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\6fd7e7a0\daa503b5_65aad301\Newtonsoft.Json.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\4b64cbd0\00025165_b8c4d201\Microsoft.AspNet.SignalR.SystemWeb.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\9d321eb5\6ecd594e_6131d301\System.Globalization.Calendars.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Collections\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Collections.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Activities\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Activities.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.ApplicationServices\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.ApplicationServices.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\f2532dad\2cdb644f_6131d301\System.IO.Compression.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\b24e323b\7230bfb6_65aad301\System.Xml.ReaderWriter.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\a6039553\0008f592_7daece01\Antlr3.Runtime.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Activities\v4.0_4.0.0.0__31bf3856ad364e35\System.Activities.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\1c0b9a4c\72e56f5b_6131d301\System.Security.Cryptography.Primitives.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.Composition\v4.0_4.0.0.0__b77a5c561934e089\System.ComponentModel.Composition.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\App_Code.vhmujfyk.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\10e92825\4fc92548_6131d301\System.AppContext.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.WebPages.Deployment\v4.0_1.0.0.0__31bf3856ad364e35\System.Web.WebPages.Deployment.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\c900e29d\29d2d35e_6131d301\System.Web.Optimization.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\8f66cce8\007bbd61_b8c4d201\Microsoft.AspNet.SignalR.Core.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\ed60a7a6\c303a552_6131d301\System.Net.Http.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\1ee3ef69\1b831a4a_6131d301\System.Console.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\App_global.asax.aksg1l93.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IdentityModel\v4.0_4.0.0.0__b77a5c561934e089\System.IdentityModel.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\5ca88e70\00529c82_5b37d201\Microsoft.Win32.Primitives.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Diagnostics.Debug\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Diagnostics.Debug.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\29e2cd50\3da86c51_6131d301\System.IO.FileSystem.Primitives.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\975b0744\ea732957_6131d301\System.Runtime.InteropServices.RuntimeInformation.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IO.Compression.FileSystem\v4.0_4.0.0.0__b77a5c561934e089\System.IO.Compression.FileSystem.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.DynamicData\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.DynamicData.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\c03cdbf4\5e29bdb2_65aad301\Microsoft.Owin.Security.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Diagnostics.Tracing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Diagnostics.Tracing.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\717e5f18\809c695a_6131d301\System.Security.Cryptography.Encoding.dll&quot; /R:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\assembly\dl3\a307df26\a496748c_3570d301\System.Security.Cryptography.Algorithms.dll&quot; /R:&quot;C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.WorkflowServices\v4.0_4.0.0.0__31bf3856ad364e35\System.WorkflowServices.dll&quot; /out:&quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\App_Web_gauoyu3g.dll&quot; /debug- /optimize+ /warnaserror- /w:4 /nowarn:1659;1699;1701;612;618 /langversion:default /nowarn:1659;1699;1701  &quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\App_Web_gauoyu3g.0.cs&quot; &quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\App_Web_gauoyu3g.1.cs&quot; &quot;C:\local\Temporary ASP.NET Files\root\88f7b2c1\dad8613e\App_Web_gauoyu3g.2.cs&quot;
+
+
+Microsoft (R) Visual C# Compiler version 2.4.0.62122 (ab56a4a6)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+C:\home\site\wwwroot\JSON\Data.aspx.cs(199,78): error CS0103: The name &#39;sShortMonthName&#39; does not exist in the current context
+</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            
+
+</div>
+
+    <script type="text/javascript">
+    function OnToggleTOCLevel1(level2ID)
+    {
+      var elemLevel2 = document.getElementById(level2ID);
+      if (elemLevel2.style.display == 'none')
+      {
+        elemLevel2.style.display = '';
+      }
+      else {
+        elemLevel2.style.display = 'none';
+      }
+    }
+    </script>
+                          <br><br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.7.2106.0
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[HttpCompileException]: C:\home\site\wwwroot\JSON\Data.aspx.cs(199): error CS0103: The name &#39;sShortMonthName&#39; does not exist in the current context
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &lt;customErrors mode="Off"/&gt;. Consider using &lt;customErrors mode="On"/&gt; or &lt;customErrors mode="RemoteOnly"/&gt; in production environments.-->
